@@ -1,34 +1,17 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# A simple tic tac toe app built with next js framework
 
-## Getting Started
+## Question with description of functionalities
+* Build an interactive Tic-Tac-Toe game with React.
+* The board should contain 9 clickable elements in a 3x3 grid. Each element should have a class called square and could take one of the following values(X or O) when is clicked.
 
-First, run the development server:
+* The game status should be inside a div element with class status.
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+* The game status text could be one of the following: Next player: X, Next player: O, Winner: X, Winner: O, Tie.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+* There should be a reset button which resets all cell values. The button should have a class reset.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+* When the game starts the status should be Next player: X and after one of the cell is clicked the status will change into: Next player: O and so on.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+* The game winner is decided when the first player scores 3 marks in a row(up, down or diagonally).
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+* If no player scores 3 marks in a row the game ends in a tie.
